@@ -11,7 +11,7 @@ namespace UnitTestExample001.Tests
         [DataTestMethod]
         public void AddIntegers_Addition_Returns_Answer(int value1, int value2, int expectedResult)
         {
-            Assert.AreEqual(new FancyProcessor().AddIntegers(value1, value2), expectedResult);
+            Assert.AreEqual(expectedResult, new FancyProcessor().AddIntegers(value1, value2));
         }
 
         [TestMethod]
